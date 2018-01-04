@@ -1,0 +1,22 @@
+###This project uses the express scalfold tool to generate the directory structure
+
+# This will make the generator available to use anywhere
+$ npm i -g express-generator
+
+$ cd <your project directory>
+
+$ git init # (if you haven't set up your repository already)
+
+$ vi .gitignore || add node_modules
+
+$ express
+
+# ...
+$ npm install
+
+####install testing packages
+npm install --save-dev tape supertest
+
+
+### run the docker daemon
+boot2docker init
