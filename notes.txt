@@ -21,4 +21,4 @@ npm install --save-dev tape supertest
 ### run the docker daemon
 boot2docker init
 
-### testing from remote
+### testing from remote to store credentials
