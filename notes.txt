@@ -21,4 +21,5 @@ npm install --save-dev tape supertest
 ### run the docker daemon
 boot2docker init
 
-### testing from remote to store credentials. last
+### To enable saving credentials in github
+git config credential.helper store
