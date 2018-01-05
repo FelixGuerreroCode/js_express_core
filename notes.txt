@@ -23,3 +23,5 @@ boot2docker init
 
 ### To enable saving credentials in github
 git config credential.helper store
+
+### from linux
