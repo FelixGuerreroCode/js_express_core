@@ -20,3 +20,7 @@ npm install --save-dev tape supertest
 
 ### run the docker daemon
 boot2docker init
+
+### to start the application 
+
+pm2 start processes.json --watch
