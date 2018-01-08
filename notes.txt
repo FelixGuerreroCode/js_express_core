@@ -1,5 +1,5 @@
+======================= PROJECT GENERATION ===============================
 ###This project uses the express scalfold tool to generate the directory structure
-
 # This will make the generator available to use anywhere
 $ npm i -g express-generator
 
@@ -17,11 +17,11 @@ $ npm install
 ####install testing packages
 npm install --save-dev tape supertest
 
-
-### run the docker daemon
+======================= Docker STARTUP ===============================
 boot2docker init
+boot2docker up
 
-<<<<<<< HEAD
+======================= START APPLICATION ===============================
 ### to start the application 
 
 pm2 start processes.json --watch
@@ -33,8 +33,7 @@ git config credential.helper store
 ### again
 pm2 start processes.json --watch
 
-
-======================= Docker Image Commands  ===============================
+======================= DOCKER IMAGE COMMANDS  ===============================
 Build 
 	docker build -t my-express .
 Run
@@ -44,13 +43,10 @@ List
 Remove
 	docker rmi ID
 
-
-======================= Docker Container Commands  ===============================
+======================= DOCKER CONTAINER COMMANDS  ===============================
 Running containers
 	docker ps
 All executed containers
 	docker ps -a
 Remove container
 	docker rm ID
-	
-
