@@ -17,9 +17,11 @@ $ npm install
 ####install testing packages
 npm install --save-dev tape supertest
 
-======================= Docker STARTUP ===============================
+======================= Docker STARTUP  AND IP Address lookup ===============================
 boot2docker init
 boot2docker up
+To determine the IP address of the docker daemon. By default it is: 192.168.59.103
+boot2docker ip
 
 ======================= START APPLICATION ===============================
 ### to start the application 
