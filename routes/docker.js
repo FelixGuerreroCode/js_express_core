@@ -2,7 +2,7 @@ const router = require('express').Router();
 
 router.get('/', (req, res, next) => {
   return res.json({
-    docker: "no good at all"
+    docker: "within a living linux instance"
   });
 });
 
