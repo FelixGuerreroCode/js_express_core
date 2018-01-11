@@ -60,5 +60,5 @@ ADD . /var/www/app/current
 #Expose the port
 EXPOSE 4500
 
-CMD ["pm2", "start", "processes.json", "--no-daemon"]
+CMD ["pm2", "start", "processes.json", "--watch", "--no-daemon" ]
 # the --no-daemon is a minor workaround to prevent the docker container from thinking pm2 has stopped running and ending itself

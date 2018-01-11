@@ -38,13 +38,16 @@ pm2 start processes.json --watch
 ======================= DOCKER IMAGE COMMANDS  ===============================
 Build 
 	docker build -t my-express .
-Run
-	docker run -p 4500:4500 my-express
 List
 	docker images
 Remove
 	docker rmi ID
+Run
+	docker run -p 8877:8877 -p 3001:3001 --name node-tut -v $(pwd)/src:/usr/local/src/src --sig-proxy=false node-tutorial npm run browsersync
+	docker run -p 4500:4500 --sig-proxy=false --name my-express my-express
 
+	With mounting of local drives:
+		docker run -p 4500:4500 --sig-proxy=false -v /Users/felixg/dev/docker/myexpress/routes/:/var/www/app/current/routes my-express
 ======================= DOCKER CONTAINER COMMANDS  ===============================
 Running containers
 	docker ps
