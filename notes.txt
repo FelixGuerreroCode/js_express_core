@@ -17,6 +17,10 @@ $ npm install
 ####install testing packages
 npm install --save-dev tape supertest
 
+======================= GIT commands ===============================
+To store credentials:
+git config --global credential.helper cache
+
 ======================= Docker STARTUP  AND IP Address lookup ===============================
 boot2docker init
 boot2docker up
