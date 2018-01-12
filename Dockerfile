@@ -5,7 +5,7 @@ FROM debian:jessie
 # Replace shell with bash so we can source files
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 # Set environment variables
-ENV appDir /var/www/app/current
+ENV appDir /usr/local/src
 
 # ...
 # Run updates and install deps
@@ -44,7 +44,6 @@ ENV NODE_PATH $NVM_DIR/versions/node/v$NODE_VERSION/lib/node_modules
 ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
 # Set the work directory
-RUN mkdir -p /var/www/app/current
 WORKDIR ${appDir}
 
 # Add our package.json and install *before* adding our application files
@@ -55,7 +54,7 @@ RUN npm i --production
 RUN npm i -g pm2
 
 # Add application files
-ADD . /var/www/app/current
+ADD . /usr/local/src
 
 #Expose the port
 EXPOSE 4500
