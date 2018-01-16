@@ -1,0 +1,5 @@
+Too see list of branches
+	git branch -a
+
+To create a new branch
+	git checkout -b develop
