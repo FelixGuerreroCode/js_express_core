@@ -11,6 +11,10 @@ const docker = require('./routes/docker');
 
 const app = express();
 
+// Engine rendering
+app.set( "view engine", "jade" );
+
+
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

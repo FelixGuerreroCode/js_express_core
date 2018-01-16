@@ -1,9 +1,13 @@
 const router = require('express').Router();
 
 router.get('/', (req, res, next) => {
-  return res.json({
-    docker: "within another request"
-  });
+	res.render( "index", 
+		{ 
+			docker: "within another request",
+			title : "My Title",
+			message : "What's up?"
+		}
+	);
 });
 
 module.exports = router;

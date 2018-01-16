@@ -17,6 +17,10 @@ $ npm install
 ####install testing packages
 npm install --save-dev tape supertest
 
+=========================== Template Engine ==============================
+Jade
+
+
 ======================= GIT commands ===============================
 To store credentials:
 git config --global credential.helper cache
